@@ -18,6 +18,9 @@ class HomePage extends StatelessWidget {
           children: [
             StoriesList(),
             PostWidget(),
+            PostWidget(),
+            PostWidget(),
+            PostWidget(),
           ],
         ),
       ),
