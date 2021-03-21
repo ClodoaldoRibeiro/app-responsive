@@ -1,9 +1,14 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive2/pages/home/home_page.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(DevicePreview(
+    builder: (context) {
+      return MyApp();
+    },
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -11,10 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
       title: 'Responsive 2',
       theme: ThemeData(primarySwatch: Colors.blue),
       builder: (context, child) {
+        DevicePreview.appBuilder(context, child);
+
         return ResponsiveWrapper.builder(
             ClampingScrollWrapper.builder(context, child),
             defaultScale: true,
