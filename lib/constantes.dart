@@ -1,1 +1,1 @@
-const IMAGE_NETWORK = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpd4mJRIUwqgE8D_Z2znANEbtiz4GhI4M8NQ&usqp=CAU";
+const IMAGE_NETWORK = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdV0JI0ixHRwRGL5xjnkPWMDMiQUheQknIQ&usqp=CAU";

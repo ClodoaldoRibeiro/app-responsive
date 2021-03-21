@@ -8,7 +8,7 @@ class PostWidget extends StatelessWidget {
     final desktop = ResponsiveWrapper.of(context).isDesktop;
 
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: desktop ? 35 : 0),
+      padding: EdgeInsets.symmetric(vertical: desktop ? 16 : 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -44,6 +44,7 @@ class PostWidget extends StatelessWidget {
           ),
           Image.network(
             IMAGE_NETWORK,
+            fit: BoxFit.cover,
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(4, 4, 4, 4),
